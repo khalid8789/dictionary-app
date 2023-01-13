@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/262f0e05ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <div class="dictionary">
+      <div class="search-page">
+        <h1>Dictionary</h1>
+        <div class="search-area">
+          <input type="text" placeholder="Search Word"/>
+          <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="recent">
+          <h3>Recent</h3>
+          <div class="recent-search">
+            <div class="no-recent">No recent search</div>
+            <ul class="recent-search__list"></ul>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="history icon">
+            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+          </div>
+          <div class="bookmark icon">
+            <span><i class="fa-solid fa-bookmark"></i></span>
+          </div>
+          <div class="settings icon">
+            <span><i class="fa-regular fa-sliders"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="loader">
+        <div class="outer">
+          <div class="inner"></div>
+        </div>
+      </div>
+      <div class="not-found__ctn">
+        <div class="back-button">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <span>Search</span>
+        </div>
+        <div class="not-found">
+          <div class="img">
+            <img src="sad.png" alt="not found" />
+          </div>
+        </div>
+      </div>
+      <div class="word-info">
+        <div class="action">
+          <div class="back-button">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <span>Search</span>
+          </div>
+          <div class="add-bookmark">
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+        </div>
+        <div class="word">
+          <h1 class="title"></h1>
+          <h3 class="phonetics"></h3>
+          <span class="sound-icon"><i class="fa-solid fa-volume-high"></i></span>
+        </div>
+        <div class="parts-of-speech"></div>
+        <div class="definition">
+          <h3>Definitions</h3>
+          <span class="total"></span>
+          <div class="definitions"></div>
+        </div>
+        <div class="thesaurus">
+          <div class="antonyms">
+            <h3>Antonyms</h3>
+            <span class="total list-items"></span>
+            <ul class="list"></ul>
+          </div>
+          <div class="synonyms">
+            <h3>Synonyms</h3>
+            <span class="total list-items"></span>
+            <ul class="list"></ul>
+          </div>
+        </div>
+        <div class="etymology">
+          <h3>Etymology</h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="history-list">
+        <div class="action">
+          <div class="back-button">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <span>Search</span>
+          </div>
+          <div class="clear">
+            <span>Clear</span>
+            <span><i class="fa-regular fa-trash-can"></i></span>
+          </div>
+        </div>
+        <h3>History</h3>
+        <ul class="list__hb"></ul>
+      </div>
+      <div class="bookmark-list">
+        <div class="action">
+          <div class="back-button">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <span>Search</span>
+          </div>
+          <div class="clear">
+            <span>Clear</span>
+            <span><i class="fa-regular fa-trash-can"></i></span>
+          </div>
+        </div>
+        <h3>Bookmark</h3>
+        <ul class="list__hb"></ul>
+      </div>
+      <div class="settings-page">
+        <div class="action">
+          <div class="back-button">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+            <span>Search</span>
+          </div>
+        </div>
+        <h3>Settings</h3>
+        <div class="dark-mode">
+          <div>Dark Mode</div>
+          <div class="btn-ctn">
+            <div class="btn">
+              <div class="toggle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
